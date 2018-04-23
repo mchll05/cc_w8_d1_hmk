@@ -23,7 +23,7 @@ public class WordCountActivity extends AppCompatActivity {
     public void getAnswer(View view){
         String countWords = editText.getText().toString();
         Answer answer = new Answer(countWords);
-        String wordCount = "Word Count: " + String.valueOf(answer.getCount());
+        String wordCount = String.valueOf(answer.getCount());
         textView.setText(wordCount);
     }
 }
