@@ -1,17 +1,26 @@
 package com.example.maustin.wordcounter;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  * Created by maustin on 23/04/2018.
  */
 
 public class Answer {
 
-    public Answer (){
-        
-    }
+        private String words;
 
+        public Answer(String words){
+            this.words = words;
+        }
 
-    public String getCount(String wordsToCount){
-        return Integer.toString(wordsToCount.length());
+        private String[] spaceWords(){
+            return this.words.split(" ");
+        }
+
+        public int getCount(){
+            return spaceWords().length;
+        }
+
     }
-}

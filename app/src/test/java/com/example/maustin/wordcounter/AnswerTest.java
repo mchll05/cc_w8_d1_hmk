@@ -15,11 +15,11 @@ public class AnswerTest {
 
     @Before
     public void before() {
-        answer = new Answer();
+        answer = new Answer("Alice");
     }
 
     @Test
     public void canCount(){
-        assertEquals(5, answer.getCount("Alice"));
+        assertEquals(5, answer.getCount());
     }
 }

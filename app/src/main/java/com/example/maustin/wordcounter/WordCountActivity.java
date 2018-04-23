@@ -8,21 +8,22 @@ import android.widget.TextView;
 
 public class WordCountActivity extends AppCompatActivity {
 
-    Answer answer;
     EditText editText;
-    TextView result;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_count);
-        answer = new Answer();
+
         editText = (EditText) findViewById(R.id.editTextID);
-        result = (TextView) findViewById(R.id.resultID);
+        textView = (TextView) findViewById(R.id.resultID);
     }
 
     public void getAnswer(View view){
-        String countedWords = editText.getText().toString();
-        result.setText(answer.getCount(countedWords));
+        String countWords = editText.getText().toString();
+        Answer answer = new Answer(countWords);
+        String wordCount = "Word Count: " + String.valueOf(answer.getCount());
+        textView.setText(wordCount);
     }
 }
