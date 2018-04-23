@@ -1,0 +1,4 @@
+<resources>
+    <string name="word_counter">Word Counter</string>
+    <string name ="input_field">Enter text to be counted here</string>
+</resources>
