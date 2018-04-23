@@ -19,8 +19,6 @@ public class WordCountActivity extends AppCompatActivity {
         answer = new Answer();
         editText = (EditText) findViewById(R.id.editTextID);
         result = (TextView) findViewById(R.id.resultID);
-
-
     }
 
     public void getAnswer(View view){

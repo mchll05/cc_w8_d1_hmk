@@ -6,7 +6,10 @@ package com.example.maustin.wordcounter;
 
 public class Answer {
 
-    public Answer (){}
+    public Answer (){
+        
+    }
+
 
     public String getCount(String wordsToCount){
         return Integer.toString(wordsToCount.length());
